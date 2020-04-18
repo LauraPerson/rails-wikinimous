@@ -1,10 +1,12 @@
 <h1>My Articles</h1>
-  <% @articles.each do |article| %>
-  <div> <%= link_to "✔️", "/articles/#{article.id}" %>
-  <%= link_to article.title, "/articles/#{article.id}" %>
-  <p> <%= article.content %> </p>
-  </div>
-  <% end %>
-<h2>
-  <%= link_to "New Article to add", "/articles/new" %>
-</h2>
+<div class= container>
+    <% @articles.each do |article| %>
+    <div> <%= link_to "✔️", "/articles/#{article.id}" %>
+    <%= link_to article.title, "/articles/#{article.id}" %>
+    <p> <%= article.content %> </p>
+    </div>
+    <% end %>
+  <h2>
+    <%= link_to "New Article to add", "/articles/new" %>
+  </h2>
+</div>
